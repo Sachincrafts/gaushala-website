@@ -1,0 +1,477 @@
+You are an expert senior frontend developer, UI/UX designer, and creative web animator.
+
+Build a complete, beautiful, premium-quality, fully responsive Hindi website UI template for a real Indian cow shelter trust.
+
+PROJECT NAME:
+Shri Bhomiyaji Nandi Gaushala
+
+PROJECT DIRECTORY:
+D:\bikaner
+
+IMPORTANT:
+First inspect the existing D:\bikaner directory and its files. Start all development inside this directory only. Do not create the project in another directory. Preserve any useful existing work and do not overwrite unrelated files.
+
+PROJECT GOAL:
+Create a complete frontend-only website template for Shri Bhomiyaji Nandi Gaushala. This is currently a design prototype, not a production-ready website.
+
+Do not implement a backend, database, authentication system, real donation processing, or payment gateway at this stage.
+
+TECH STACK:
+
+- Next.js with App Router
+- TypeScript
+- Tailwind CSS
+- Lucide React icons
+- Framer Motion or Motion for smooth animations
+- Use reusable, well-organized React components
+
+If the directory already contains a working project, inspect its framework and dependencies before making changes. Reuse the existing setup where practical.
+
+LANGUAGE:
+The entire visible website must be in natural Hindi using Devanagari script. Use readable Hindi typography and proper spacing.
+
+TRUST DETAILS FROM THE PROVIDED RECEIPT:
+
+Official trust name:
+श्री भोमियाजी नन्दी गौशाला
+
+Location:
+हुणालनगर, बावड़ी सुरसिहान, तहसील: खींवसर (नागौर), राजस्थान.
+
+Use the location above as transcribed from the receipt. Keep the address editable in one central configuration file because some spelling may need verification.
+
+Office bearers listed on the receipt:
+
+अध्यक्ष: मदनसिंह (राजलानी)
+उपाध्यक्ष: कैलाशसिंह
+कोषाध्यक्ष: मंगलालालसिंह
+सचिव: लखपतसिंह
+मंत्री: बलदेवसिंह
+
+The receipt also lists the trust registration number:
+COOP/2025/NAGAUR/500372-03/10/2025
+
+G.P. Code:
+GP24/00469
+
+These details are provided for the UI prototype. Display them only where appropriate, such as a trust information section or footer. Keep the details editable.
+
+Do not display the receipt's handwritten donor information or donation amount publicly.
+
+Do not invent trust registration approvals, 80G eligibility, tax benefits, verified donation statistics, animal counts, or other facts that are not confirmed.
+
+DESIGN DIRECTION:
+
+Create a visually impressive, premium Indian gaushala website with a warm, spiritual, natural, welcoming, and trustworthy aesthetic.
+
+Use:
+
+- Forest green
+- Leaf green
+- Warm cream
+- Off-white
+- Earthy brown
+- Subtle saffron accents
+- Soft shadows
+- Rounded cards
+- Elegant section separators
+- Beautiful typography
+- Generous spacing
+- High-quality cow and gaushala photography
+
+The design must feel like a professionally designed charitable trust website, not a generic AI-generated landing page.
+
+Avoid excessive gradients, excessive glassmorphism, cartoon-style cows, cheap-looking icons, oversized text, cluttered layouts, and unnecessary animation.
+
+COW IMAGES AND VISUALS:
+
+You must source and include suitable cow, calf, gaushala, fodder, animal-care, and Indian rural environment images yourself.
+
+Use suitable, publicly accessible image URLs from reputable image sources such as Unsplash or Pexels, where permitted.
+
+Prefer authentic photographs of Indian cows, calves, cow shelters, and people caring for cows.
+
+Use real photographs rather than cartoon illustrations.
+
+If a remote image fails, provide an attractive local fallback or a reliable alternative. Organize image URLs in one central configuration file so they can be replaced easily.
+
+Do not invent image URLs. Check that the selected images are suitable for their intended sections.
+
+WEBSITE STRUCTURE:
+
+Build the complete website with the following sections.
+
+1. TOP ANNOUNCEMENT BAR
+
+Create a slim, elegant announcement bar at the top.
+
+Possible Hindi text:
+"गौसेवा ही सच्ची सेवा है • आइए, गौमाता की सेवा में सहभागी बनें"
+
+Use a subtle entrance animation.
+
+2. RESPONSIVE NAVIGATION
+
+Create a premium responsive navigation bar containing:
+
+- Gaushala logo or a beautiful temporary logo mark
+- श्री भोमियाजी नन्दी गौशाला
+- मुख्य पृष्ठ
+- हमारे बारे में
+- गौसेवा
+- गौशाला की झलक
+- पदाधिकारी
+- संपर्क करें
+- गौसेवा करें button
+
+On mobile, use a clean hamburger menu with a smooth open and close animation.
+
+The menu must work properly on mobile and desktop.
+
+Ensure that all menu links navigate to the correct sections.
+
+3. HERO SECTION
+
+This is the most important section.
+
+Create a visually stunning, full-width hero section featuring a large, beautiful photograph of Indian cows in a peaceful green gaushala environment.
+
+Include:
+
+- A small badge: "सेवा • समर्पण • संरक्षण"
+- Main heading:
+  "गौमाता की सेवा, हमारा परम धर्म"
+- Supporting Hindi text describing the mission of caring for and protecting cows.
+- Primary CTA: "गौसेवा में सहभागी बनें"
+- Secondary CTA: "हमारी गौशाला देखें"
+
+Add elegant decorative elements inspired by leaves, nature, and traditional Indian design.
+
+Use subtle animations for the heading, text, and buttons.
+
+The hero should feel alive, emotional, premium, and welcoming.
+
+Do not allow text to become unreadable over the photograph.
+
+On desktop, create a balanced composition with strong visual hierarchy.
+
+On mobile, stack the content naturally and ensure the hero remains attractive without taking excessive vertical space.
+
+4. TRUST INTRODUCTION
+
+Create an elegant section introducing Shri Bhomiyaji Nandi Gaushala.
+
+Heading:
+"सेवा और करुणा का पवित्र संकल्प"
+
+Include editable Hindi placeholder copy explaining the importance of cow care, protection, feeding, and animal welfare.
+
+Use a large photograph alongside the text.
+
+Add a "हमारे बारे में जानें" button.
+
+Do not make unsupported claims about the trust's history or achievements.
+
+5. OUR MISSION SECTION
+
+Create four attractive cards:
+
+- गौमाता की सेवा
+- चारा एवं पोषण
+- गौ चिकित्सा एवं देखभाल
+- गौशाला का विकास
+
+Each card should have:
+
+- A suitable icon
+- Short Hindi description
+- Subtle hover effects
+- A clean, premium layout
+
+Use authentic photography where appropriate.
+
+6. BEAUTIFUL COW GALLERY
+
+Create a visually impressive photo gallery featuring:
+
+- Indian cows
+- Calves
+- Cows eating fodder
+- Cow shelter environment
+- Animal care activities
+
+Use a responsive masonry-style or editorial grid layout.
+
+Clicking an image should open a polished lightbox with next, previous, and close controls.
+
+Implement keyboard accessibility and mobile-friendly touch interaction.
+
+Use real photographs and ensure the gallery works properly.
+
+7. GAUSEVA SECTION
+
+Heading:
+"आपकी सेवा, गौमाता का सहारा"
+
+Create four donation-purpose cards:
+
+- गौग्रास एवं चारा सेवा
+- गौ चिकित्सा सेवा
+- गौशाला विकास
+- लापसी एवं गुड़ सेवा
+
+These categories are based on the donation purposes printed on the provided receipt.
+
+Each card should include a photograph or suitable icon, a short Hindi description, and a "सेवा के बारे में जानें" button.
+
+For now, these buttons should open a beautiful informational modal or scroll to a relevant section.
+
+Do not connect any payment gateway.
+
+Do not claim that a donation has been received or processed.
+
+8. COW CARE HIGHLIGHT
+
+Create a beautiful visual section focused on caring for cows.
+
+Use a large photograph and content highlighting:
+
+- समय पर चारा और पानी
+- स्वच्छ एवं सुरक्षित आश्रय
+- आवश्यकता के अनुसार चिकित्सा
+- नियमित देखभाल और संरक्षण
+
+Use tasteful decorative elements and subtle scroll animations.
+
+9. TRUST OFFICE BEARERS
+
+Heading:
+"हमारे पदाधिकारी"
+
+Create five responsive profile cards using the names from the receipt:
+
+- अध्यक्ष — मदनसिंह (राजलानी)
+- उपाध्यक्ष — कैलाशसिंह
+- कोषाध्यक्ष — मंगलालालसिंह
+- सचिव — लखपतसिंह
+- मंत्री — बलदेवसिंह
+
+Use elegant placeholder portrait illustrations or neutral profile placeholders if actual photographs are unavailable.
+
+Do not invent their photographs, biographies, or personal details.
+
+Ensure names and designations are easy to edit.
+
+10. GAUSHALA INFORMATION SECTION
+
+Create a premium information panel containing:
+
+गौशाला का नाम:
+श्री भोमियाजी नन्दी गौशाला
+
+पता:
+हुणालनगर, बावड़ी सुरसिहान, तहसील खींवसर, नागौर, राजस्थान
+
+Include:
+
+- Location icon
+- Address display
+- Copy-address button
+- Google Maps button
+
+Only link to an accurately identified location if it can be verified. Otherwise, use a Google Maps search URL based on the address rather than inventing exact coordinates.
+
+Do not invent a telephone number, email address, opening hours, or social media accounts.
+
+11. CALL TO ACTION SECTION
+
+Create a visually beautiful full-width section with a cow photograph.
+
+Heading:
+"आइए, गौसेवा के इस पावन कार्य से जुड़ें"
+
+Supporting text:
+"आपका स्नेह, समय और सहयोग गौमाता की सेवा के संकल्प को आगे बढ़ाने में सहायक हो सकता है।"
+
+Buttons:
+
+- गौशाला के बारे में जानें
+- संपर्क जानकारी देखें
+
+Use elegant animation and a strong visual composition.
+
+12. CONTACT SECTION
+
+Create a clean contact section featuring:
+
+- Gaushala name
+- Address
+- Map/search link
+- A simple contact form UI
+
+Form fields:
+
+- आपका नाम
+- मोबाइल नंबर
+- संदेश
+
+The form must have frontend validation and a demo submission state.
+
+Since there is no backend, clearly indicate that the form is a demonstration and messages are not actually sent.
+
+Do not display fabricated contact details.
+
+13. FOOTER
+
+Create a beautiful, multi-column footer containing:
+
+- Gaushala name and logo
+- Short Hindi description
+- Navigation links
+- Gaushala address
+- Trust registration details, presented carefully
+- Copyright year generated dynamically
+
+Use a dark forest-green background with warm cream text.
+
+ANIMATION REQUIREMENTS:
+
+Use Framer Motion or Motion for tasteful animations such as:
+
+- Hero content entrance
+- Fade-up section reveals
+- Staggered card animations
+- Subtle image hover zoom
+- Smooth button interactions
+- Navigation menu transitions
+- Gallery lightbox transitions
+- Gentle floating decorative leaves
+- Scroll-triggered reveals
+
+Important performance rules:
+
+- Respect prefers-reduced-motion.
+- Avoid heavy continuous animations.
+- Avoid unnecessary JavaScript animation loops.
+- Prefer transform and opacity animations.
+- Ensure animations do not cause layout shifts.
+- Do not sacrifice accessibility or mobile performance for visual effects.
+
+RESPONSIVENESS REQUIREMENTS:
+
+The website must be fully responsive across:
+
+- Small Android phones
+- Large Android phones
+- iPhones
+- Tablets
+- Laptops
+- Desktop monitors
+- Wide desktop screens
+
+Test layouts at approximately:
+
+- 320px
+- 360px
+- 390px
+- 430px
+- 768px
+- 1024px
+- 1280px
+- 1440px
+
+Requirements:
+
+- No horizontal scrolling.
+- No overlapping text.
+- No broken cards.
+- No clipped buttons.
+- No overflowing images.
+- No navigation overflow.
+- Proper mobile spacing.
+- Readable Hindi typography.
+- Touch-friendly buttons.
+- Consistent alignment.
+- Responsive images with appropriate aspect ratios.
+
+FUNCTIONALITY REQUIREMENTS:
+
+Although this is a UI template, all frontend interactions should work.
+
+Implement:
+
+- Responsive navigation
+- Section scrolling
+- Working CTA buttons
+- Gallery lightbox
+- Image navigation
+- Informational modals
+- Contact form validation
+- Demo form submission feedback
+- Copy-address interaction
+- Accessible keyboard navigation
+- Proper focus states
+- Loading and image fallback states where necessary
+
+Do not implement:
+
+- Real payment processing
+- Backend APIs
+- Database
+- Admin authentication
+- Real donor records
+- Real donation receipts
+- Production contact form submission
+
+CODE QUALITY:
+
+- Use reusable React components.
+- Keep components organized and maintainable.
+- Keep content and trust information in a central configuration file.
+- Avoid giant components containing the entire website.
+- Avoid unnecessary dependencies.
+- Use semantic HTML.
+- Include accessible labels and appropriate ARIA attributes.
+- Optimize images.
+- Use appropriate metadata and a Hindi page title.
+- Use a proper favicon or temporary gaushala logo.
+- Add a custom 404 page if appropriate.
+- Keep the project easy to extend with a future backend and donation system.
+
+VISUAL QUALITY EXPECTATION:
+
+The final result should look like a premium website created by a professional design agency.
+
+Prioritize beautiful photography, thoughtful typography, clean layouts, strong visual hierarchy, tasteful animations, and consistent spacing.
+
+Do not create a generic template with only a hero section and three cards.
+
+Build every section listed above.
+
+EXECUTION INSTRUCTIONS:
+
+1. Inspect D:\bikaner before making changes.
+2. Check whether Node.js and the necessary development tools are available.
+3. Set up the Next.js project inside D:\bikaner if needed.
+4. Install only necessary dependencies.
+5. Implement the complete website.
+6. Run the development build and check for errors.
+7. Fix TypeScript, lint, build, and runtime errors where possible.
+8. Run the website locally and inspect its appearance if browser tools are available.
+9. Test the responsive layout and key interactions.
+10. Fix any obvious design, spacing, overflow, and mobile navigation issues.
+11. Do not stop after generating the initial files.
+12. Do not ask me to implement missing components manually.
+
+FINAL DELIVERABLE:
+
+A complete, beautiful, animated, Hindi-language, mobile-responsive Gaushala website UI template inside D:\bikaner.
+
+When finished, report:
+
+- What was implemented
+- Important project files
+- Any remaining issues
+- The exact command to run the website locally
+
+Start working in D:\bikaner now.

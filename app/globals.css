@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #fdfaf6;
+  --foreground: #1c1917;
+  --bhagwa-deep: #7c2200;
+  --bhagwa-dark: #9e2a00;
+  --bhagwa: #c43c00;
+  --bhagwa-bright: #e65100;
+  --bhagwa-saffron: #f57c00;
+  --bhagwa-gold: #ff9800;
+  --warm-cream: #faf3eb;
+  --chandan: #fff7ed;
+  --earthy-brown: #5c2005;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-bhagwa-deep: var(--bhagwa-deep);
+  --color-bhagwa-dark: var(--bhagwa-dark);
+  --color-bhagwa: var(--bhagwa);
+  --color-bhagwa-bright: var(--bhagwa-bright);
+  --color-bhagwa-saffron: var(--bhagwa-saffron);
+  --color-bhagwa-gold: var(--bhagwa-gold);
+  --color-warm-cream: var(--warm-cream);
+  --color-chandan: var(--chandan);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

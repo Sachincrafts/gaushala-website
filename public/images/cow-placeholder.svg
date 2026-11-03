@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bhagwaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b23b00"/>
+      <stop offset="50%" stop-color="#7c2200"/>
+      <stop offset="100%" stop-color="#4a1500"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb300" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e65100" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bhagwaBg)"/>
+  <circle cx="400" cy="280" r="220" fill="url(#glowGrad)"/>
+
+  <!-- Decorative Pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5" fill="none">
+    <circle cx="400" cy="280" r="140"/>
+    <circle cx="400" cy="280" r="180"/>
+    <circle cx="400" cy="280" r="220"/>
+  </g>
+
+  <!-- Cow Icon / Motif -->
+  <g transform="translate(400, 270) scale(1.6)" fill="#fff7ed" opacity="0.95" text-anchor="middle">
+    <path d="M-40 20 C-40 -10, -20 -15, 0 -15 C20 -15, 40 -10, 40 20 C35 32, -35 32, -40 20 Z"/>
+    <ellipse cx="-35" cy="-10" rx="15" ry="18"/>
+    <path d="M-44 -20 C-48 -36, -55 -40, -58 -44 C-50 -38, -42 -30, -40 -20 Z"/>
+    <path d="M-30 -22 C-26 -36, -18 -40, -14 -44 C-20 -38, -26 -30, -28 -22 Z"/>
+    <path d="M15 25 C15 10, 30 6, 45 6 C58 6, 68 15, 68 25 C60 33, 20 33, 15 25 Z"/>
+    <circle cx="62" cy="8" r="8"/>
+  </g>
+
+  <!-- Hindi Text -->
+  <text x="400" y="420" font-family="'Noto Sans Devanagari', 'Segoe UI', sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    श्री भोमियाजी नन्दी गौशाला
+  </text>
+  <text x="400" y="460" font-family="'Noto Sans Devanagari', 'Segoe UI', sans-serif" font-size="18" fill="#ffd54f" text-anchor="middle">
+    हुणालनगर, खींवसर (नागौर), राजस्थान
+  </text>
+  <text x="400" y="500" font-family="'Noto Sans Devanagari', 'Segoe UI', sans-serif" font-size="15" fill="#fff7ed" opacity="0.8" text-anchor="middle">
+    गौमाता की सेवा • हमारा परम धर्म
+  </text>
+</svg>
