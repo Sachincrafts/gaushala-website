@@ -2,7 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import { Heart, MapPin, Sparkles, ArrowUp } from "lucide-react";
-import { siteConfig } from "@/config/site";
+import { siteConfig, assetPath } from "@/config/site";
 import Image from "next/image";
 
 const subscribe = () => () => {};
@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative w-12 h-12 flex-shrink-0">
                 <Image
-                  src="/images/logo.svg"
+                  src={assetPath("/images/logo.svg")}
                   alt="श्री भोमियाजी नन्दी गौशाला"
                   fill
                   className="object-contain"

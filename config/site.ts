@@ -1,5 +1,20 @@
 // Central configuration for Shri Bhomiyaji Nandi Gaushala website
 
+export const basePath =
+  process.env.NEXT_PUBLIC_BASE_PATH ??
+  (process.env.NODE_ENV === "production" ? "/gaushala-website" : "");
+
+export function assetPath(path: string): string {
+  if (!path) return path;
+  if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("data:")) {
+    return path;
+  }
+  if (!basePath) return path;
+  if (path.startsWith(basePath)) return path;
+  const clean = path.startsWith("/") ? path : `/${path}`;
+  return `${basePath}${clean}`;
+}
+
 export interface GalleryItem {
   id: number;
   title: string;
@@ -95,11 +110,11 @@ export const siteConfig = {
 
   // Primary Authentic Cow Images (100% Real Indian Cattle & Gaushala photos)
   images: {
-    hero: "/images/cows/gaushala-herd.jpg",
-    about: "/images/cows/gaushala-shed.jpg",
-    cowCare: "/images/cows/injured-cow.jpg",
-    ctaBackground: "/images/cows/gaushala-chandigarh.jpg",
-    fallback: "/images/cow-placeholder.svg",
+    hero: assetPath("/images/cows/gaushala-herd.jpg"),
+    about: assetPath("/images/cows/gaushala-shed.jpg"),
+    cowCare: assetPath("/images/cows/injured-cow.jpg"),
+    ctaBackground: assetPath("/images/cows/gaushala-chandigarh.jpg"),
+    fallback: assetPath("/images/cow-placeholder.svg"),
   },
 
   // Gallery items - 100% authentic cows, sick/injured cow treatment, and gaushala
@@ -109,7 +124,7 @@ export const siteConfig = {
       title: "दुर्घटनाग्रस्त व बीमार गौमाता की चिकित्सा",
       category: "medical",
       categoryLabel: "बीमार व घायल गौसेवा",
-      src: "/images/cows/injured-cow.jpg",
+      src: assetPath("/images/cows/injured-cow.jpg"),
       alt: "दुर्घटना में घायल गौमाता का उपचार",
       description: "सड़क दुर्घटना, चोट अथवा बीमारी से पीड़ित बेसहारा गौवंश को गौशाला में लाकर प्राथमिक उपचार, मरहम-पट्टी व दवाएं दी जाती हैं।",
     },
@@ -118,7 +133,7 @@ export const siteConfig = {
       title: "गौशाला में आश्रित विशाल गौवंश का झुंड",
       category: "shelter",
       categoryLabel: "गौशाला परिसर",
-      src: "/images/cows/gaushala-herd.jpg",
+      src: assetPath("/images/cows/gaushala-herd.jpg"),
       alt: "गौशाला परिसर में गायों का विशाल झुंड",
       description: "सैकड़ों असहाय, वृद्ध व बेसहारा गायों-नन्दियों को सुरक्षित आश्रय, धूप-छाया और संरक्षण का सुरक्षित वातावरण।",
     },
@@ -127,7 +142,7 @@ export const siteConfig = {
       title: "श्रद्धापूर्वक गौग्रास व ताजा चारा वितरण",
       category: "care",
       categoryLabel: "दैनिक चारा सेवा",
-      src: "/images/cows/feeding-gomata.jpg",
+      src: assetPath("/images/cows/feeding-gomata.jpg"),
       alt: "गौमाता को चारा खिलाते हुए",
       description: "प्रतिदिन प्रातः व सायं सेवकों व श्रद्धालुओं द्वारा गौमाता को ताजा हरा चारा और पौष्टिक आहार प्रेमपूर्वक खिलाया जाता है।",
     },
@@ -136,7 +151,7 @@ export const siteConfig = {
       title: "राजस्थान की सांचौरी देशी गौमाता व बछड़ा",
       category: "cows",
       categoryLabel: "गौमाता एवं नन्दी",
-      src: "/images/cows/rajasthan-cow-calf.jpg",
+      src: assetPath("/images/cows/rajasthan-cow-calf.jpg"),
       alt: "राजस्थान की देशी गौमाता और बछड़ा",
       description: "राजस्थान की पावन धरा पर ममतामयी देशी गौमाता और उसके नन्हे बछड़े का वात्सल्यमय और शांत दृश्य।",
     },
@@ -145,7 +160,7 @@ export const siteConfig = {
       title: "अशक्त व वृद्ध गौवंश की विशेष देखरेख",
       category: "medical",
       categoryLabel: "बीमार व घायल गौसेवा",
-      src: "/images/cows/gaushala-resting.jpg",
+      src: assetPath("/images/cows/gaushala-resting.jpg"),
       alt: "अशक्त गौमाता की देखभाल",
       description: "चलने-फिरने में असमर्थ, दुर्बल और वृद्ध गौवंश के लिए अलग शेड में कोमल बिछावन, सुपाच्य दलिया और निरंतर निगरानी।",
     },
@@ -154,7 +169,7 @@ export const siteConfig = {
       title: "गौशाला परिसर में सुरक्षित आश्रय शेड",
       category: "shelter",
       categoryLabel: "गौशाला परिसर",
-      src: "/images/cows/gaushala-chandigarh.jpg",
+      src: assetPath("/images/cows/gaushala-chandigarh.jpg"),
       alt: "गौशाला का सुरक्षित टीन शेड परिसर",
       description: "गर्मी, शीत लहर व वर्षा से बचाव हेतु मजबूत हवादार शेड, जहाँ गौमाताएं निर्भय होकर विश्राम करती हैं।",
     },
@@ -163,7 +178,7 @@ export const siteConfig = {
       title: "स्वच्छ पेयजल कुंड व चारा खेलियां",
       category: "shelter",
       categoryLabel: "गौशाला परिसर",
-      src: "/images/cows/gaushala-trough.jpg",
+      src: assetPath("/images/cows/gaushala-trough.jpg"),
       alt: "गौवंश के लिए पानी की खेळ और चारा व्यवस्था",
       description: "गौवंश के लिए दिनभर स्वच्छ शीतल जल की पक्की खेलियां और उत्तम सूखे भूसे की नियमित व्यवस्था।",
     },
@@ -172,7 +187,7 @@ export const siteConfig = {
       title: "अनाथ बछड़ों का ममतामय संरक्षण",
       category: "cows",
       categoryLabel: "गौमाता एवं नन्दी",
-      src: "/images/cows/calf-nursing.jpg",
+      src: assetPath("/images/cows/calf-nursing.jpg"),
       alt: "बछड़े का ममतामयी पोषण",
       description: "गौशाला में आश्रित नन्हे बछड़ों की विशेष देखरेख, संतुलित पोषण और स्नेहिल परिवेश।",
     },
@@ -224,7 +239,7 @@ export const siteConfig = {
         "दैनिक घाव सफाई, मलहम, पट्टी एवं इंजेक्शन व्यवस्था",
         "पशु चिकित्सक द्वारा नियमित स्वास्थ्य परीक्षण एवं दवाइयां",
       ],
-      image: "/images/cows/injured-cow.jpg",
+      image: assetPath("/images/cows/injured-cow.jpg"),
     },
     {
       id: "fodder",
@@ -238,7 +253,7 @@ export const siteConfig = {
         "उच्च गुणवत्ता वाला सूखा भूसा व कुट्टी",
         "स्वच्छ व शीतल पेयजल की नियमित व्यवस्था",
       ],
-      image: "/images/cows/feeding-gomata.jpg",
+      image: assetPath("/images/cows/feeding-gomata.jpg"),
     },
     {
       id: "development",
@@ -252,7 +267,7 @@ export const siteConfig = {
         "स्वच्छ पेयजल हेतु पक्की खेलियों का निर्माण",
         "चारा भंडारण गृह एवं सुरक्षित चारदीवारी",
       ],
-      image: "/images/cows/gaushala-shed.jpg",
+      image: assetPath("/images/cows/gaushala-shed.jpg"),
     },
     {
       id: "special",
@@ -266,7 +281,7 @@ export const siteConfig = {
         "जन्मदिन, वर्षगांठ व पुण्यतिथि पर विशेष भोग व्यवस्था",
         "गौमाता के प्रति विशेष आदर एवं कृतज्ञता ज्ञापन",
       ],
-      image: "/images/cows/cow-fodder.jpg",
+      image: assetPath("/images/cows/cow-fodder.jpg"),
     },
   ] as GausevaType[],
 

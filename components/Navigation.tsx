@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Heart, MapPin, Sparkles } from "lucide-react";
-import { siteConfig } from "@/config/site";
+import { siteConfig, assetPath } from "@/config/site";
 import Image from "next/image";
 
 export default function Navigation() {
@@ -74,7 +74,7 @@ export default function Navigation() {
             >
               <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0 transition-transform group-hover:scale-105">
                 <Image
-                  src="/images/logo.svg"
+                  src={assetPath("/images/logo.svg")}
                   alt="श्री भोमियाजी नन्दी गौशाला प्रतीक"
                   fill
                   className="object-contain"

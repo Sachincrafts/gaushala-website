@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, Heart } from "lucide-react";
-import { siteConfig } from "@/config/site";
+import { siteConfig, assetPath } from "@/config/site";
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-[#fdfaf6] flex flex-col items-center justify-center p-4 text-center">
       <div className="relative w-20 h-20 mb-6">
         <Image
-          src="/images/logo.svg"
+          src={assetPath("/images/logo.svg")}
           alt="श्री भोमियाजी नन्दी गौशाला प्रतीक"
           fill
           className="object-contain"
